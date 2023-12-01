@@ -1,0 +1,70 @@
+html {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: #f7f1e3;
+    color: #84817a;
+    font-family: ;
+}
+:root{
+    --primary-color:#f7f1e3;
+    --second-color:#84817a;
+    --third-color:#b33939;
+    --fourth-color:#ff5252;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 5px auto;
+  width: 70%;
+}
+.headerContainer .right ul,
+.headerContainer .left .left-list {
+  gap: 15px;
+  display: flex;
+}
+.headerContainer .right ul li a,
+.headerContainer .left ul li a {
+  text-decoration: none;
+  color: black;
+}
+.headerContainer .left .left-list .hiddenList .first {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.headerContainer .left .left-list .hiddenList li:not(:first-child) {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+
+  padding: 10px;
+}
+
+.headerContainer .left .left-list .hiddenList li:last-child {
+  margin-bottom: 0px;
+  border-bottom: 1px solid black;
+}
+.headerContainer .left .left-list .hiddenList {
+  transition: 300ms;
+  visibility: hidden;
+}
+.headerContainer .left .left-list .hiddenList .first {
+  visibility: visible;
+}
+.headerContainer .left .left-list .hiddenList:hover {
+  visibility: visible;
+}
