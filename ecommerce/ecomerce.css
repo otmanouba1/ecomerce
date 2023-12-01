@@ -16,10 +16,14 @@ body {
   --second-color: #3f3e3d;
   --third-color: #b33939;
   --fourth-color: #ff5252;
+  --five-color:#b0b0b0;
 }
 a {
   text-decoration: none;
   color: var(--second-color);
+}
+a:hover {
+  color: var(--fourth-color);
 }
 ul {
   list-style: none;
@@ -31,4 +35,34 @@ ul {
 .flex-gap {
   display: flex;
   gap: 10px;
+}
+.headerContainer{
+margin-top: 5px;
+}
+
+.headerContainer .left .hiddenList {
+  visibility: hidden;
+}
+.headerContainer .left .hiddenList li {
+  text-align: center;
+  padding: 0px 10px 10px;
+}
+.headerContainer .left .hiddenList li:not(:first-child) {
+  padding-top: 10px;
+  border-bottom: 1px solid var(--second-color);
+  border-right: 1px solid var(--second-color);
+  border-left: 1px solid var(--second-color);
+ 
+}
+.headerContainer .left .hiddenList .chosen {
+  visibility: visible;
+}
+.headerContainer .left .hiddenList:hover {
+  visibility: visible;
+  
+}
+.headerContainer .left .hiddenList .first {
+    color: var(--five-color);
+  border-top: 1px solid var(--second-color);
+  background-color: var(--third-color);
 }
