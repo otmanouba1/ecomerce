@@ -45,7 +45,6 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 .flex-row {
   display: flex;
@@ -61,37 +60,32 @@ ul {
   margin: 0 auto;
   min-height: 300px;
   max-width: 800px;
-  margin-top: 5px;
+  padding: 10px 10px 0;
   font-size: 12px;
 }
 
 .left ul .hiddenElement {
-  width: 40px;
-  height: 20px;
   text-align: center;
 }
 .left ul ul {
-
   display: none;
 }
-.left-table thead {
+.left ul .visible {
   width: 50px;
-  visibility: visible;
-}
-.left ul ul .selected a {
-  color: var(--primary-color);
-}
-.left ul ul .selected {
-  background-color: var(--third-color);
 }
 .left ul ul li {
   width: 50px;
   height: 20px;
-
 }
 .left ul ul {
   width: 50px;
   box-shadow: 0px 0px 13px 2px rgba(176, 176, 176, 0.84);
+}
+.left ul ul .selected {
+  color: var(--primary-color);
+}
+.left ul ul .selected {
+  background-color: var(--third-color);
 }
 .left ul .hiddenElement:hover ul {
   display: block;
