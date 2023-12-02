@@ -11,6 +11,7 @@ body {
   color: var(--second-color);
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+ 
 }
 :root {
   --primary-color: #f5f5f5;
@@ -49,8 +50,7 @@ ul {
 .flex-row {
   display: flex;
   gap: 20%;
-  margin: 0 auto;
-  /* flex-wrap: wrap; */
+  align-items: center;
 }
 .flex-gap {
   display: flex;
@@ -58,10 +58,11 @@ ul {
 }
 .headerContainer {
   margin: 0 auto;
-  min-height: 300px;
   max-width: 800px;
   padding: 10px 10px 0;
   font-size: 12px;
+  text-wrap: nowrap;
+ 
 }
 
 .left ul .hiddenElement {
@@ -69,6 +70,8 @@ ul {
 }
 .left ul ul {
   display: none;
+  position: absolute;
+ z-index: 1 ;
 }
 .left ul .visible {
   width: 50px;
@@ -79,6 +82,7 @@ ul {
 }
 .left ul ul {
   width: 50px;
+
   box-shadow: 0px 0px 13px 2px rgba(176, 176, 176, 0.84);
 }
 .left ul ul .selected {
@@ -89,4 +93,50 @@ ul {
 }
 .left ul .hiddenElement:hover ul {
   display: block;
+  
+
+}
+/* down nav bar */
+.down-container {
+  position: relative;
+ 
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-top: 10px;
+  vertical-align: middle;
+  position: relative;
+  z-index: -1;
+}
+.down-container .logo p {
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-weight: 700;
+
+  color: var(--second-color);
+  position: relative;
+}
+.down-container .logo p::before {
+  content: "";
+  position: absolute;
+  width: 94px;
+  top: 40%;
+  z-index: -1;
+  height: 15px;
+  background-color: #ff5252;
+}
+.down-container .navigation  nav ul li a{
+  position: relative;
+ 
+}
+.down-container .navigation .item {
+  position: absolute;
+}
+.down-container .navigation .up-item {
+  font-size: 11px;
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
+  position: relative;
+  top: -40px;
+  left: 30px;
 }
