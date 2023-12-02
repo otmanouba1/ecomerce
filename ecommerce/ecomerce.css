@@ -10,6 +10,7 @@ body {
   background-color: var(--primary-color);
   color: var(--second-color);
   font-family: "Roboto", sans-serif;
+  line-height: 1.5;
 }
 :root {
   --primary-color: #f5f5f5;
@@ -24,50 +25,74 @@ h6 {
 }
 a {
   text-decoration: none;
-  color: var(--second-color);
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 a:hover {
   color: var(--fourth-color);
 }
+input::placeholder {
+  color: inherit;
+  font: inherit;
+}
 ul {
   list-style: none;
 }
+.flex-col-centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
 .flex-row {
   display: flex;
-  justify-content: space-around;
+  gap: 20%;
+  margin: 0 auto;
+  /* flex-wrap: wrap; */
 }
 .flex-gap {
   display: flex;
-  gap: 10px;
+  gap: 2em;
 }
 .headerContainer {
+  margin: 0 auto;
+  min-height: 300px;
+  max-width: 800px;
   margin-top: 5px;
+  font-size: 12px;
 }
 
-.left-list table thead head,
-h6 {
-  padding-left: 10px;
-}
-.left-list table tbody .choise {
-  padding: 10px;
+.left ul .hiddenElement {
+  width: 40px;
+  height: 20px;
+  text-align: center;
 }
 .left ul ul {
+
   display: none;
 }
 .left-table thead {
+  width: 50px;
   visibility: visible;
+}
+.left ul ul .selected a {
+  color: var(--primary-color);
 }
 .left ul ul .selected {
   background-color: var(--third-color);
 }
-
 .left ul ul li {
-  padding: 10px;
+  width: 50px;
+  height: 20px;
+
 }
 .left ul ul {
+  width: 50px;
   box-shadow: 0px 0px 13px 2px rgba(176, 176, 176, 0.84);
 }
-
 .left ul .hiddenElement:hover ul {
   display: block;
 }
