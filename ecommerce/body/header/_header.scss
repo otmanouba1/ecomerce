@@ -28,10 +28,24 @@
 
 .left-list {
     .hiddenElement {
+        .list-down {
+            position: relative;
+
+            img {
+                vertical-align: middle;
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                top: 20%;
+
+
+            }
+        }
+
         cursor: pointer;
         text-align: center;
-        width: 50px;
-        height: 23px;
+        width: 65px;
+        height: 30px;
 
         &:hover ul {
             display: block;
@@ -40,6 +54,7 @@
         }
 
         ul {
+            margin-top: 10px;
             cursor: auto;
             display: none;
             position: relative;
@@ -54,7 +69,7 @@
             }
 
             .selected {
-                margin-top: 5px;
+
                 background-color: $fourth-color ;
 
                 a:hover {

@@ -63,14 +63,25 @@ body {
 .left-list .hiddenElement {
   cursor: pointer;
   text-align: center;
-  width: 50px;
-  height: 23px;
+  width: 65px;
+  height: 30px;
+}
+.left-list .hiddenElement .list-down {
+  position: relative;
+}
+.left-list .hiddenElement .list-down img {
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 20%;
 }
 .left-list .hiddenElement:hover ul {
   display: block;
   color: forestgreen;
 }
 .left-list .hiddenElement ul {
+  margin-top: 10px;
   cursor: auto;
   display: none;
   position: relative;
@@ -82,7 +93,6 @@ body {
   line-height: 25px;
 }
 .left-list .hiddenElement ul .selected {
-  margin-top: 5px;
   background-color: #ff5252;
 }
 .left-list .hiddenElement ul .selected a:hover {
