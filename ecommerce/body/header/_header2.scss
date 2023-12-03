@@ -1,4 +1,53 @@
+@use '../../varaible/varaible' as *;
+
 .down-container {
-    display: flex;
-    color: red;
+    width: 80%;
+    margin: 0 auto;
+//   justify-content: space-between;
+    align-items: center;
+  
+    .logo{
+        margin-right: 50px;
+    }
+    .logo p {
+        font-size: 2em;
+        font-weight: 400;
+        letter-spacing: 20px;
+        position: relative;
+
+    }
+
+    .logo p::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: -1;
+        width: 90%;
+        height: 18px;
+        background-color: $fourth-color;
+    }
+
+    &,
+    .nav-optionse {
+        margin-top: 10px;
+        display: flex;
+        gap: 30px;
+
+        .new-item {
+            position: relative;
+            .up-item {
+                font-style: italic;
+                position: absolute;
+                font-size: 11px;
+                background-color: $third-color;
+                color: $primary-color;
+                padding: 1px;
+                top: -50%;
+                right: -25px;
+               
+            }
+
+        }
+    }
 }

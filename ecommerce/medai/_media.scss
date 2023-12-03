@@ -1,17 +1,26 @@
-@media (max-width:880px) {
+@media (min-width:880px) {
     .headerContainer {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+}
+
+@media (max-width:800px) {
+    .headerContainer {
+        justify-content: center;
+        align-content: center;
+        padding: 5px;
         width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-        justify-content: center;
-        gap: 60px;
+        gap: 30px;
 
     }
 }
 
-@media (max-width:730px) {
-    .headerContainer {
-        gap: 20px;
-        justify-content: center;
-    }
-}
+// @media (max-width:730px) {
+//     .headerContainer {
+//         gap: 60px;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
