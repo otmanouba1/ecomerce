@@ -1,11 +1,15 @@
 @use '../varaible/varaible' as *;
 
+
 .headerContainer,
 .right-list,
 .left-list {
     display: flex;
     justify-content: space-between;
     text-wrap: nowrap;
+    a{
+        font-size: 12px;
+    }
 
     .right-list {
         gap: 20px;
@@ -24,7 +28,7 @@
 .left-list {
     .hiddenElement {
         text-align: center;
-        width: 60px;
+        width: 50px;
         height: 30px;
 
         &:hover ul {
