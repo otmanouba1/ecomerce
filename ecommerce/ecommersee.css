@@ -66,16 +66,6 @@ body {
   width: 65px;
   height: 30px;
 }
-.left-list .hiddenElement .list-down {
-  position: relative;
-}
-.left-list .hiddenElement .list-down img {
-  vertical-align: middle;
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  top: 20%;
-}
 .left-list .hiddenElement:hover ul {
   display: block;
   color: forestgreen;
@@ -143,4 +133,20 @@ body {
   padding: 1px;
   top: -50%;
   right: -25px;
+}
+
+.more-list {
+  position: relative;
+}
+.more-list:hover {
+  filter: invert(56%) sepia(81%) saturate(3149%) hue-rotate(327deg) brightness(100%) contrast(103%);
+}
+.more-list img {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10%;
+}
+.more-list .icon {
+  top: 20%;
 }/*# sourceMappingURL=ecommersee.css.map */

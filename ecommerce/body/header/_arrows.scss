@@ -1,0 +1,20 @@
+.more-list{
+    &:hover{
+        filter: invert(56%) sepia(81%) saturate(3149%) hue-rotate(327deg) brightness(100%) contrast(103%);
+        
+                }
+    position: relative;
+
+    img {
+        // vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 10%;
+ 
+            }
+    .icon{
+        top: 20%;
+
+    }
+}
