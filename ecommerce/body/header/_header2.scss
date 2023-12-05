@@ -3,12 +3,13 @@
 .down-container {
     width: 80%;
     margin: 0 auto;
-//   justify-content: space-between;
+
     align-items: center;
-  
-    .logo{
+
+    .logo {
         margin-right: 50px;
     }
+
     .logo p {
         font-size: 2em;
         font-weight: 400;
@@ -28,14 +29,17 @@
         background-color: $fourth-color;
     }
 
+
     &,
     .nav-optionse {
         margin-top: 10px;
         display: flex;
         gap: 30px;
 
+
         .new-item {
             position: relative;
+
             .up-item {
                 font-style: italic;
                 position: absolute;
@@ -45,9 +49,42 @@
                 padding: 1px;
                 top: -50%;
                 right: -25px;
-               
+
             }
 
         }
+    }
+
+    .navigation {
+        width: 100%;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+            .left-nav-options {
+                display: flex;
+                gap: 20px;
+                position: relative;
+
+                .buy-items,
+                .favorite-items {
+                    display: inline-block;
+                    width: 13px;
+                    height: 13px;
+                    text-align: center;
+                    position: relative;
+                    top: -50%;
+                    left: -25%;
+                    font-size: 13px;
+                    // padding: 2px;
+
+                    background-color: $third-color;
+                    color: $primary-color;
+                    border-radius: 50% 50% 50% 50%/ 50% 50% 50% 50%;
+                }
+            }
+        }
+
     }
 }
